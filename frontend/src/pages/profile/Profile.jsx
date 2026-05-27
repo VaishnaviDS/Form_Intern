@@ -86,7 +86,7 @@ const handleProfileImage = async (e) => {
           <img
             src={
               user?.profileImage
-                ? `http://localhost:5000/uploads/${user.profileImage}`
+                ? `https://form-intern.onrender.com/uploads/${user.profileImage}`
                 : "/user.png"
             }
             alt="profile"
