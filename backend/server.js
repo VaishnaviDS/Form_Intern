@@ -9,7 +9,12 @@ import formRoutes from './routes/form.js'
 dotenv.config();
 connectDB()
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://form-intern-nine.vercel.app",
+    credentials: true,
+  })
+);
 app.use(express.json());
 app.use("/uploads", express.static("uploads"));
 app.use('/api/auth',authRoutes)
