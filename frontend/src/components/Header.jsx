@@ -34,11 +34,11 @@ const Header = () => {
           alignItems: "center",
         }}
       >
-        (!user && (
+        {!user && (
         <>
   <Link to="/register" style={linkStyle}>Sign up</Link>
 <Link to="/login" style={linkStyle}>Login</Link>
-        </>))
+        </>)}
         {/* ================= USER NAVBAR ================= */}
         {user?.role === "user" && (
           <>
