@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 
+dns.setDefaultResultOrder("ipv4first");
 export const sendEmail = async (to, subject, text) => {
   const transporter = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
