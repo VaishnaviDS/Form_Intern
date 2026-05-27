@@ -34,7 +34,8 @@ const Header = () => {
           alignItems: "center",
         }}
       >
-
+        <Link to="/register" style={linkStyle}>Sign up</Link>
+<Link to="/login" style={linkStyle}>Login</Link>
         {/* ================= USER NAVBAR ================= */}
         {user?.role === "user" && (
           <>
