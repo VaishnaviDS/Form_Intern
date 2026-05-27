@@ -1,0 +1,100 @@
+/* auth.css */
+
+/* REGISTER + LOGIN WRAPPER */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FORM */
+.auth-form {
+  width: 350px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* TITLE */
+.auth-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* INPUTS + SELECT */
+.auth-input,
+.auth-select {
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.auth-input:focus,
+.auth-select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.5);
+}
+
+/* FILE INPUT */
+.auth-file {
+  font-size: 14px;
+}
+
+/* BUTTON */
+.auth-button {
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #357abd;
+}
+
+/* MOBILE */
+@media (max-width: 400px) {
+  .auth-form {
+    width: 90%;
+    padding: 20px;
+  }
+}
+/* FORGOT PASSWORD */
+
+.auth-forgot {
+  margin-top: 15px;
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.auth-forgot:hover {
+  text-decoration: underline;
+}
+
+.auth-forgot-box {
+  width: 100%;
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}

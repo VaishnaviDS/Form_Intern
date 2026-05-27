@@ -1,0 +1,166 @@
+/* Profile.css */
+
+.profile-container {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  padding: 40px 20px;
+}
+
+.profile-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* TITLE */
+
+.profile-title {
+  font-size: 34px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* PROFILE CARD */
+
+.profile-card {
+  background-color: white;
+  border-radius: 14px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+
+.profile-image-wrapper {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.profile-image {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4a90e2;
+}
+
+/* PLUS BUTTON */
+
+.profile-upload-btn {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 34px;
+  height: 34px;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  border: 3px solid white;
+  transition: 0.3s;
+}
+
+.profile-upload-btn:hover {
+  background-color: #357abd;
+}
+
+/* INFO */
+
+.profile-name {
+  font-size: 26px;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.profile-email,
+.profile-role {
+  color: #555;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* HISTORY */
+
+.profile-history {
+  margin-top: 50px;
+}
+
+.profile-history-title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* HISTORY CARD */
+
+.profile-history-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* FORM TITLE */
+
+.profile-form-title {
+  font-size: 22px;
+  margin-bottom: 18px;
+  color: #333;
+}
+
+/* ANSWERS */
+
+.profile-answers {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-answer {
+  font-size: 15px;
+  color: #444;
+}
+
+.profile-answer-label {
+  font-weight: bold;
+  color: #111;
+}
+
+/* DATE */
+
+.profile-date {
+  margin-top: 18px;
+  color: gray;
+  font-size: 14px;
+}
+
+/* EMPTY */
+
+.profile-empty {
+  color: gray;
+  font-style: italic;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .profile-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-wrapper {
+    width: 100%;
+  }
+
+}

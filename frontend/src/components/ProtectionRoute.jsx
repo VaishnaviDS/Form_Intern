@@ -1,0 +1,82 @@
+// src/components/ProtectedRoute.jsx
+
+import { Navigate } from "react-router-dom";
+
+import { useUser } from "../context/UserContext";
+
+const ProtectedRoute = ({
+  children,
+  role,
+}) => {
+
+  const {
+    user,
+    token,
+    loading,
+  } = useUser();
+
+  /////////////////////////////////////////////////////////
+  // WAIT UNTIL PROFILE LOADS
+  /////////////////////////////////////////////////////////
+
+  if (loading) {
+
+    return (
+      <h2>
+        Loading...
+      </h2>
+    );
+  }
+
+  /////////////////////////////////////////////////////////
+  // NOT LOGGED IN
+  /////////////////////////////////////////////////////////
+
+  if (!token) {
+
+    return (
+      <Navigate
+        to="/login"
+        replace
+      />
+    );
+  }
+
+  /////////////////////////////////////////////////////////
+  // USER NOT LOADED YET
+  /////////////////////////////////////////////////////////
+
+  if (!user) {
+
+    return (
+      <h2>
+        Loading Profile...
+      </h2>
+    );
+  }
+
+  /////////////////////////////////////////////////////////
+  // ROLE CHECK
+  /////////////////////////////////////////////////////////
+
+  if (
+    role &&
+    user.role !== role
+  ) {
+
+    return (
+      <Navigate
+        to="/"
+        replace
+      />
+    );
+  }
+
+  /////////////////////////////////////////////////////////
+  // ALLOW ACCESS
+  /////////////////////////////////////////////////////////
+
+  return children;
+};
+
+export default ProtectedRoute;

@@ -1,0 +1,138 @@
+/* CreateForm.css */
+
+.createform-container {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  padding: 40px 20px;
+}
+
+.createform-wrapper {
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  padding: 35px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.createform-title {
+  font-size: 32px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.createform-info {
+  background-color: #eef4ff;
+  padding: 14px;
+  border-left: 4px solid #4a90e2;
+  border-radius: 8px;
+  color: #333;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.createform-subinfo {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.createform-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* INPUT */
+.createform-input,
+.createform-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.createform-input:focus,
+.createform-select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.4);
+}
+
+/* ADD BUTTON */
+.createform-add-btn {
+  width: fit-content;
+  padding: 12px 18px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.createform-add-btn:hover {
+  background-color: #357abd;
+}
+
+/* FIELD CARD */
+.createform-field-card {
+  border: 1px solid #d9d9d9;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fafafa;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* CHECKBOX */
+.createform-checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.createform-label {
+  font-size: 15px;
+  color: #333;
+}
+
+.createform-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* SUBMIT BUTTON */
+.createform-submit-btn {
+  padding: 14px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.createform-submit-btn:hover {
+  background-color: #218838;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .createform-wrapper {
+    padding: 25px;
+  }
+
+  .createform-title {
+    font-size: 26px;
+  }
+
+}

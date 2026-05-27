@@ -1,0 +1,169 @@
+/* FormPage.css */
+
+.formpage-container {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  padding: 40px 20px;
+}
+
+.formpage-wrapper {
+  max-width: 900px;
+  margin: auto;
+}
+
+/* TITLE */
+
+.formpage-title {
+  font-size: 34px;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+/* EMPTY */
+
+.formpage-empty {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+/* CARD */
+
+.formpage-card {
+  background-color: white;
+  border-radius: 14px;
+  padding: 25px;
+  margin-bottom: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+}
+
+.formpage-card:hover {
+  transform: translateY(-2px);
+}
+
+/* FORM TITLE */
+
+.formpage-form-title {
+  font-size: 24px;
+  color: #333;
+}
+
+/* BUTTON */
+
+.formpage-button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.formpage-button:hover {
+  background-color: #357abd;
+}
+
+/* DISABLED BUTTON */
+
+.formpage-button-disabled {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #b5b5b5;
+  color: white;
+  cursor: not-allowed;
+  font-size: 15px;
+}
+
+/* LINK */
+
+.formpage-link {
+  text-decoration: none;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .formpage-card {
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .formpage-button,
+  .formpage-button-disabled {
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+
+  .formdetails-container {
+    padding: 20px 15px;
+  }
+
+  .formdetails-wrapper {
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+
+  .formdetails-title {
+    font-size: 28px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .formdetails-label {
+    font-size: 15px;
+  }
+
+  .formdetails-input,
+  .formdetails-textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .formdetails-button {
+    width: 100%;
+    font-size: 15px;
+  }
+
+}
+
+/* ======================================================
+   SMALL MOBILE
+====================================================== */
+
+@media (max-width: 480px) {
+
+  .formdetails-wrapper {
+    padding: 20px 15px;
+  }
+
+  .formdetails-title {
+    font-size: 24px;
+  }
+
+  .formdetails-input,
+  .formdetails-textarea {
+    border-radius: 8px;
+  }
+
+  .formdetails-button {
+    padding: 13px;
+  }
+}
+
+}

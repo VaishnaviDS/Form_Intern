@@ -1,0 +1,189 @@
+/* home.css */
+
+.home-container {
+  min-height: 100vh;
+  background-color: #f5f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======================================================
+   HERO
+====================================================== */
+
+.home-hero {
+  padding: 100px 20px;
+  background: linear-gradient(
+    135deg,
+    #4a90e2,
+    #357abd
+  );
+  color: white;
+  text-align: center;
+}
+
+.home-hero-content {
+  max-width: 900px;
+  margin: auto;
+}
+
+.home-title {
+  font-size: 52px;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.home-description {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+}
+
+/* ======================================================
+   BUTTONS
+====================================================== */
+
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.home-link {
+  text-decoration: none;
+}
+
+.home-primary-btn,
+.home-secondary-btn,
+.home-cta-btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.home-primary-btn {
+  background-color: white;
+  color: #357abd;
+  font-weight: bold;
+}
+
+.home-primary-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.home-secondary-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.home-secondary-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ======================================================
+   FEATURES
+====================================================== */
+
+.home-features {
+  padding: 80px 20px;
+}
+
+.home-section-title {
+  text-align: center;
+  font-size: 40px;
+  color: #222;
+  margin-bottom: 50px;
+}
+
+.home-features-grid {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 30px;
+}
+
+.home-feature-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.home-feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.home-feature-title {
+  font-size: 22px;
+  color: #222;
+  margin-bottom: 15px;
+}
+
+.home-feature-text {
+  color: #555;
+  line-height: 1.7;
+}
+
+/* ======================================================
+   CTA
+====================================================== */
+
+.home-cta {
+  padding: 90px 20px;
+  text-align: center;
+  background-color: white;
+}
+
+.home-cta-title {
+  font-size: 42px;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.home-cta-text {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 35px;
+}
+
+.home-cta-btn {
+  background-color: #4a90e2;
+  color: white;
+}
+
+.home-cta-btn:hover {
+  background-color: #357abd;
+}
+
+/* ======================================================
+   MOBILE
+====================================================== */
+
+@media (max-width: 768px) {
+
+  .home-title {
+    font-size: 38px;
+  }
+
+  .home-description {
+    font-size: 16px;
+  }
+
+  .home-section-title {
+    font-size: 32px;
+  }
+
+  .home-cta-title {
+    font-size: 34px;
+  }
+
+}
