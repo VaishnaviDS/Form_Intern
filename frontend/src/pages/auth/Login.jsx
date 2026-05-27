@@ -162,7 +162,7 @@ if(user?.role=="user")
 
         {/* FORGOT PASSWORD */}
 
-        <p
+        {/* <p
           className="auth-forgot"
           onClick={() =>
             setShowForgot(
@@ -171,7 +171,7 @@ if(user?.role=="user")
           }
         >
           Forgot Password?
-        </p>
+        </p> */}
 
         {
           showForgot && (
